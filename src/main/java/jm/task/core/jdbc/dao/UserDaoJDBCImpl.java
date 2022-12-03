@@ -12,6 +12,7 @@ public class UserDaoJDBCImpl implements UserDao {
     public UserDaoJDBCImpl() {
 
     }
+    // для JDBC
     Connection connection=null;
     public void createUsersTable() throws SQLException {
         try (Connection connection = Util.getConnection();
